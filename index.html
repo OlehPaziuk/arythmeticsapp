@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра "Усний рахунок"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Гра "Усний рахунок"</h1>
+    <p>Оберіть тип операції:</p>
+    
+    <div class="operation-buttons">
+        <button id="add">Додавання (+)</button>
+        <button id="subtract">Віднімання (-)</button>
+        <button id="multiply">Множення (×)</button>
+        <button id="divide">Ділення (÷)</button>
+    </div>
+    
+    <div class="game-container" id="game-container" style="display: none;">
+        <div class="stage">Етап: <span id="stage">1</span>/5</div>
+        <div class="problem" id="problem"></div>
+        <div class="input-display" id="input-display"></div>
+        <div class="message" id="message"></div>
+        <div class="timer">Час: <span id="timer">60</span> сек</div>
+        <div class="score">Бали: <span id="score">0</span>/45</div>
+        
+        <div class="numpad">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="negative">-</button>
+            <button>0</button>
+            <button class="clear">Стерти</button>
+            <button class="enter">Ввести</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <footer>
+    © 2025 КІ-401 Пазюк О.С. Усі права захищено.
+    </footer>
+</body>
+</html>
